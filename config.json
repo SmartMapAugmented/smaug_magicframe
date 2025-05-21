@@ -1,0 +1,387 @@
+[
+	{"quizz_courant": "europe_college"},
+{
+	"CONFNAVISU" : "navisu",
+	"HOST" : "93.90.200.21",
+	"PORT" : "3003",
+	"CONTROL" :"control",
+	"READ_FILE" : "read",
+	"ORIGIN" : "SMAUG",
+	"CMD_TRACK" : "track",
+	"TARGET_SHIP" : "ship" 
+},
+	{
+		"quizzName": "europe_primaire",
+		"quizzTable": "europe_primaire_3857",
+		"quizzFichier" : "europe_primaire.sqlite",
+		"questions": [
+					"brest",
+					"mediterranee",
+					"allemagne",
+					"fondateurs",
+					"suede",
+					"athenes",
+					"uk"
+					 ],
+		"sonBonneReponse" : "Q11.wav",
+		"sonMauvaiseReponse" : "Q12.wav",
+		"calage" : [ 	"5090710,4624850",
+                		"4443911,-1000759",
+                		"9911952,1615636"
+				],
+		"calage_pix" : [ 	"1383.2791666666667,190.04403244495947",
+							"398.8019543973941, 77.51796060254922",
+							"856.3615635179152, 1033.989571263036"
+				]
+	},
+	{
+		"quizzName": "europe_primaire_bzh",
+		"quizzTable": "europe_primaire_3857",
+		"quizzFichier" : "europe_primaire.sqlite",
+		"questions": [
+					"brest",
+					"mediterranee",
+					"allemagne",
+					"fondateurs",
+					"suede",
+					"athenes",
+					"uk"
+					 ],
+		"sonBonneReponse" : "BonneReponse.wav",
+		"sonMauvaiseReponse" : "MauvaiseReponse.wav",
+		"calage" : [ 	"5090710,4624850",
+                		"4443911,-1000759",
+                		"9911952,1615636"
+				],
+		"calage_pix" : [ 	"1383.2791666666667,190.04403244495947",
+							"398.8019543973941, 77.51796060254922",
+							"856.3615635179152, 1033.989571263036"
+				]
+	},
+	{
+		"quizzName": "europe_college",
+		"quizzTable": "europe_college_3857",
+		"quizzFichier" : "europe_college.sqlite",
+		"questions": [
+					"manche",
+					"suede",
+					"uk",
+					"turquie",
+					"belgique",
+					"france",
+					"pays-bas",
+					"allemagne",
+					"greenwich"
+					 ],
+		"sonBonneReponse" : "Q11.wav",
+		"sonMauvaiseReponse" : "Q12.wav",
+		"calage" : [ 	"5090710,4624850",
+                		"4443911,-1000759",
+                		"9911952,1615636"
+				],
+		"calage_pix" : [ 	"1383.2791666666667,190.04403244495947",
+							"398.8019543973941, 77.51796060254922",
+							"856.3615635179152, 1033.989571263036"
+				]
+	},
+	{
+		"quizzName": "europe_college_bzh",
+		"quizzTable": "europe_college_3857",
+		"quizzFichier" : "europe_college.sqlite",
+		"questions": [
+					"manche",
+					"suede",
+					"uk",
+					"turquie",
+					"belgique",
+					"france",
+					"pays-bas",
+					"allemagne",
+					"greenwich"
+					 ],
+		"sonBonneReponse" : "BonneReponse.wav",
+		"sonMauvaiseReponse" : "MauvaiseReponse.wav",
+		"calage" : [ 	"5090710,4624850",
+                		"4443911,-1000759",
+                		"9911952,1615636"
+				],
+		"calage_pix" : [ 	"1383.2791666666667,190.04403244495947",
+							"398.8019543973941, 77.51796060254922",
+							"856.3615635179152, 1033.989571263036"
+				]
+	},
+	{
+		"quizzName": "europe_intermediaire",
+		"quizzTable": "europe_intermediaire_3857",
+		"quizzFichier" : "europe_intermediaire.sqlite",
+		"questions": [
+					"pologne",
+					"allemagne",
+					"rotterdam",
+					"luxembourg",
+					"estonie",
+					"croatie",
+					"bosphore",
+					"malte",
+					"non_shengen",
+					"adriatique",
+					"amsterdam",
+					"norvege"
+					 ],
+		"sonBonneReponse" : "BonneReponse.wav",
+		"sonMauvaiseReponse" : "MauvaiseReponse.wav",
+		"calage" : [ 	"5090710,4624850",
+                		"4443911,-1000759",
+                		"9911952,1615636"
+				],
+		"calage_pix" : [ 	"1383.2791666666667,190.04403244495947",
+							"398.8019543973941, 77.51796060254922",
+							"856.3615635179152, 1033.989571263036"
+				]
+	},
+	{
+		"quizzName": "europe_intermediaire_bzh",
+		"quizzTable": "europe_intermediaire_3857",
+		"quizzFichier" : "europe_intermediaire.sqlite",
+		"questions": [
+					"pologne",
+					"allemagne",
+					"rotterdam",
+					"luxembourg",
+					"estonie",
+					"croatie",
+					"bosphore",
+					"malte",
+					"non_shengen",
+					"adriatique",
+					"amsterdam",
+					"norvege"
+					 ],
+		"sonBonneReponse" : "BonneReponse.wav",
+		"sonMauvaiseReponse" : "MauvaiseReponse.wav",
+		"calage" : [ 	"5090710,4624850",
+                		"4443911,-1000759",
+                		"9911952,1615636"
+				],
+		"calage_pix" : [ 	"1383.2791666666667,190.04403244495947",
+							"398.8019543973941, 77.51796060254922",
+							"856.3615635179152, 1033.989571263036"
+				]
+	},
+	{
+		"quizzName": "europe_intermediaire_en",
+		"quizzTable": "europe_intermediaire_3857",
+		"quizzFichier" : "europe_intermediaire.sqlite",
+		"questions": [
+					"pologne",
+					"allemagne",
+					"rotterdam",
+					"luxembourg",
+					"estonie",
+					"croatie",
+					"bosphore",
+					"malte",
+					"non_shengen",
+					"adriatique",
+					"amsterdam",
+					"norvege"
+					 ],
+		"sonBonneReponse" : "BonneReponse.wav",
+		"sonMauvaiseReponse" : "MauvaiseReponse.wav",
+		"calage" : [ 	"5090710,4624850",
+                		"4443911,-1000759",
+                		"9911952,1615636"
+				],
+		"calage_pix" : [ 	"1383.2791666666667,190.04403244495947",
+							"398.8019543973941, 77.51796060254922",
+							"856.3615635179152, 1033.989571263036"
+				]
+	},
+	{
+		"quizzName": "quizz_pluneret",
+		"quizzTable": "pluneret_general",
+		"quizzFichier" : "pluneret.sqlite",
+		"questions": [
+					"comtesse",
+					"pipit",
+					"treulan"
+					,"dorade",
+					"teno",
+					"segur",
+					"bono",
+					"gare",
+					"kerisper",
+					"Leran",
+					"pont",
+					"chapelle",
+					"culminant",
+					"Dolmen"
+					 ],
+		"sonBonneReponse" : "BonneReponse.wav",
+		"sonMauvaiseReponse" : "MauvaiseReponse.wav",
+		"calage" : [ 	"6058841,-332738",
+                		"6055077,-320965",
+                		"6047000,-330363"
+				],
+		"calage_pix" : [ 	"361.29706840390884, 1023.9872537659328",
+							"1341.4247557003257, 711.41483198146",
+							"556.3224755700326, 41.25955967555045"
+				]
+	},
+	{
+		"quizzName": "europe_gastronomie",
+		"quizzTable": "europe_gastronomie",
+		"quizzFichier" : "europe.sqlite",
+		"questions": [
+					"fromage_allemagne",
+					"sarmales_roumanie",
+					"biere_reptcheque",
+					"gazpacho_espagne",
+					"restovege_suisse",
+					"fishchips_angleterre",
+					"potjevleesch_france",
+					"vinsurface_espagne",
+					"saumon_norvege",
+					"stampott_paysbas",
+					"haggis_ecosse",
+					"viande_france"
+					 ],
+		"sonBonneReponse" : "BonneReponse.wav",
+		"sonMauvaiseReponse" : "MauvaiseReponse.wav",
+		"calage" : [ 	"5090710,4624850",
+                		"4443911,-1000759",
+                		"9911952,1615636"
+				],
+		"calage_pix" : [ 	"1383.2791666666667,190.04403244495947",
+							"398.8019543973941, 77.51796060254922",
+							"856.3615635179152, 1033.989571263036"
+				]
+	},
+	{
+		"quizzName": "europe_litterature",
+		"quizzTable": "europe_litterature",
+		"quizzFichier" : "europe.sqlite",
+		"questions": [
+					"alice_angleterre",
+					"primolevi_italie",
+					"lecture_france",
+					"1livreallemange",
+					"ulysse_grece",
+					"owilde_irlande",
+					"segur_russie",
+					"nobel2023_norvege",
+					"ecrivain_angleterre",
+					"jkr_portugal",
+					"afrank_allemagne"
+					 ],
+		"sonBonneReponse" : "BonneReponse.wav",
+		"sonMauvaiseReponse" : "MauvaiseReponse.wav",
+		"calage" : [ 	"5090710,4624850",
+                		"4443911,-1000759",
+                		"9911952,1615636"
+				],
+		"calage_pix" : [ 	"1383.2791666666667,190.04403244495947",
+							"398.8019543973941, 77.51796060254922",
+							"856.3615635179152, 1033.989571263036"
+				]
+	},
+	{
+		"quizzName": "europe_science",
+		"quizzTable": "europe_intermediaire_3857",
+		"quizzFichier" : "europe_science.sqlite",
+		"questions": [
+			"feroe",
+			"brest",
+			"marmara",
+			"come",
+			"syrie",
+			"asturies",
+			"linux",
+			"nessie",
+			"noel",
+			"cesar",
+			"suede",
+			"gascogne",
+			"mernoire",
+			"maneken",
+			"kerry",
+			"capnord",
+			"malte",
+			"fleming",
+			"peloponese",
+			"sirene",
+			"rome",
+			"stonehenge",
+			"chat",
+			"vinci",
+			"jo",
+			"corse",
+			"islande",
+			"pythagore",
+			"fromage",
+			"einstein",
+			"goudron",
+			"copernic",
+			"copernicus",
+			"gibraltar",
+			"galilee",
+			"nobel",
+			"metro"
+					 ],
+		"sonBonneReponse" : "bj.wav",
+		"sonMauvaiseReponse" : "mr.wav",
+		"calage" : [ 	"5090710,4624850",
+                		"4443911,-1000759",
+                		"9911952,1615636"
+				],
+		"calage_pix" : [ 	"1383.2791666666667,190.04403244495947",
+							"398.8019543973941, 77.51796060254922",
+							"856.3615635179152, 1033.989571263036"
+				]
+	},
+	{
+		"quizzName": "brest_obcb2024",
+		"quizzTable": "europe_college_3857",
+		"quizzFichier" : "brest_obcb2024.sqlite",
+		"questions": [
+				"infini",
+				"telepherique",
+				"hia",
+				"spadium",
+				"ecole_guerin",
+				"piscine",
+				"capucins",
+				"moulin",
+				"guerin",
+				"maison"
+		],
+		"sonBonneReponse" : "BonneReponse.wav",
+		"sonMauvaiseReponse" : "MauvaiseReponse.wav",
+		"calage" : [ 	"6181861,-502226",
+                		"6166696,-506551",
+                		"6171928,-489985"
+				],
+		"calage_pix" : [ 	"685.0, 958.0",
+							"421.0, 3.0",
+							"1432.0, 353.0"
+				]
+	},
+	{
+		"quizzName": "super_brest",
+		"quizzTable": "europe_college_3857",
+		"quizzFichier" : "brest_obcb2024.sqlite",
+		"questions": [
+				"q1"
+		],
+		"sonBonneReponse" : "BonneReponse.wav",
+		"sonMauvaiseReponse" : "MauvaiseReponse.wav",
+		"calage" : [ 	"6171835.853,-500886.675",
+                		"6172183.835,-498817.511",
+                		"6170864.517,-498756.927"
+				],
+		"calage_pix" : [ 	"2.9984375, 823.237037037037",
+							"1300.3223958333333, 1034.0416666666667",
+							"1329.3072916666667, 201.81296296296293"
+				]
+	}
+]

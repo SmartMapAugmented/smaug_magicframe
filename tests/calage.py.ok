@@ -1,0 +1,125 @@
+from sympy import *  # necessite npmath installe
+import tkinter
+from tkinter import ttk, Tk, Button, Canvas
+from tkinter import *
+from PIL import Image, ImageTk
+import imutils
+import os
+from threading import Thread
+import PIL.Image, PIL.ImageTk
+from time import sleep
+from multithread_detect import detection
+import cv2
+from pts_calage import *
+from fonctions import *
+
+
+
+
+
+class fenetre(Thread):
+    """ Un thread qui lit la position de la souris et l'affiche dans la fenêtre
+        et qui remplit les variables x et y de la classe
+    """
+
+    # a la creation, lit l'argument donné (nomThread)
+    def __init__(self, monThread):
+        Thread.__init__(self)
+        self.monThread = monThread
+        self.width = monThread.video_width
+        self.height = monThread.video_height
+        # definition des variables de la classe. nom_delobjet.x pour y accéder en dehors
+        self.x = 0  # position x du curseur en pixel vers la droite
+        self.y = 0  # position y du curseur en pixel vers le bas
+        #points x,y des 3 points de calage
+        self.point_calage1 = (0,0)
+        self.point_calage2 = (0,0)
+        self.point_calage3 = (0,0)
+        self.nb_pts_cales = 0
+
+
+    def rec_point(self,event):
+        """
+        fonction pour enregistrer les 3 points de calage  sur le clic de la souris
+        """
+        print("point clic", self.x,self.y)
+        if self.nb_pts_cales == 0 :
+            self.point_calage1 = self.x,self.y
+            self.nb_pts_cales = self.nb_pts_cales + 1
+            print("1 points enregistré : ",self.point_calage1, self.point_calage2, self.point_calage3)
+        elif self.nb_pts_cales == 1 :
+            self.point_calage2 = self.x,self.y
+            self.nb_pts_cales = self.nb_pts_cales + 1
+            print("2 points enregistrés : ",self.point_calage1, self.point_calage2, self.point_calage3)
+        elif self.nb_pts_cales == 2 :
+            self.point_calage3 = self.x,self.y
+            self.nb_pts_cales = self.nb_pts_cales + 1
+            print("3 points enregistrés : ",self.point_calage1, self.point_calage2, self.point_calage3)
+            print("lancemenent du calageA")
+            print(coordonnees_cal)
+            self.coeffs = det_coeffs((coordonnees_cal["1"],self.point_calage1),(coordonnees_cal["2"],self.point_calage2),(coordonnees_cal["3"],self.point_calage3))
+            print("coeffs : ", self.coeffs)
+        else :
+            self.point_calage1 = self.x,self.y
+            self.point_calage2 = 0,0
+            self.point_calage3 = 0,0
+            self.nb_pts_cales = 1
+            print("1 points enregistré : ",self.point_calage1, self.point_calage2, self.point_calage3)
+
+    def recup_pointer(self,cv):
+        """
+        récupération de la coordonnée du curseur dans la fenetre en ppixel x,y
+        """
+        self.x, self.y = self.root.winfo_pointerxy() #position dans la fenêtre du pc
+        self.x = self.x - self.root.winfo_rootx() #position dans la fenêtre root
+        self.y = self.y - self.root.winfo_rooty()
+        
+        #print("coordonnees : ",self.x,self.y)
+        return(self.x, self.y)
+
+    def run(self):
+        
+        self.root = Tk()  
+        self.root.title("Calage")
+        #ici insérer la frame une fois (pas de maj)
+        frame = self.monThread.frame_export
+        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+
+        #nom_image = "cartesmaug.jpg"
+        
+        size = (self.width, self.height)
+        print(size[0],size[1])
+
+
+        cv = Canvas()
+        toto='coucou'
+        cv.bind("<Motion>",
+                lambda event, a=cv:
+                self.recup_pointer(a))
+        
+        cv.bind("<Button-1>", self.rec_point)
+        cv.pack(side='top', fill='both', expand='yes')
+        
+        cv.configure(width=size[0], height=size[1]) # 
+        self.photo = PIL.ImageTk.PhotoImage(image = PIL.Image.fromarray(frame))
+        cv.create_image(0, 0, image = self.photo, anchor = tkinter.NW)
+        
+        self.root.mainloop()
+
+
+#à décommenter pour tester en solo
+#code suivant à intégrer dans le main si besoin
+"""
+thread_1 = detection("1") # le 1 sert à rien, thread à passer en paramètre dans l'interface
+thread_1.start()
+while not thread_1.detection_on: #attente que la caméra soit lancée
+    pass        
+        
+print("creation du thread")
+fenetre1 = fenetre(thread_1) #fenetre1 est le thread
+
+fenetre1.start()
+fenetre1.join()
+
+print('fin du calage')
+"""

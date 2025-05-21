@@ -1,0 +1,2 @@
+nom_config;teinte_min;teinte_max:360;saturation_min:0;saturation_max:360;lumiere_min:0;lumiere_max:360
+defaut;1;360;0;100;0;360
