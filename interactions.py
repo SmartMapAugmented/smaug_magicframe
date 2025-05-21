@@ -1,7 +1,4 @@
-import pyttsx3
-import time
 import os
-#import simpleaudio as sa
 from kivy.core.audio import SoundLoader
 
 

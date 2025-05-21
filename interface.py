@@ -14,6 +14,11 @@ import os
 from quizz import Quizz
 from fonctions import calc_pos, charge_quizz
 
+"""
+Application de détection
+ATTENTION ca fonctione pour un affichage 1920x1080 
+Si on change le nombre de pixel, alors il faut refaire le calage
+"""
 
 
 os.environ['PATH'] = os.environ['PATH'] + ';.\\dll'
